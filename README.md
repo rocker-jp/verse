@@ -19,7 +19,7 @@
 以下のコマンドを実行することで、RStudioサーバのコンテナを起動することが出来ます。
 
 ```shell
-docker run -d -p 8787:8787 rockerjp/tidyverse
+docker run -d -p 8787:8787 rockerjp/verse
 ```
 
 起動した後、`http://<サーバのアドレス(ローカルで実行している場合localhost)>:8787`にブラウザからアクセスすることでRStudioサーバを使用できます。
@@ -27,14 +27,6 @@ docker run -d -p 8787:8787 rockerjp/tidyverse
 
 - username: rstudio
 - password: rstudio
-
-<!--
-## ステータス ##
-
-| Docker Container Source on GitHub                | Docker Hub Build Status and URL                                | Image Size
-| :---------------------------------------         | :-----------------------------------------                     | :--------------
-| RStudio (hadleyverse + 日本語環境) | [good](https://registry.hub.docker.com/u/tokyor/rstudio/)  | [![Layers and Size](https://images.microbadger.com/badges/image/tokyor/rstudio.svg)](https://registry.hub.docker.com/u/tokyor/rstudio//)
--->
 
 ## ライセンス
 このDockerfileは MIT によりライセンスされています。
