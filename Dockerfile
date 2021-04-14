@@ -17,6 +17,6 @@ RUN apt-get update && apt-get install -y fonts-ipaexfont
 RUN Rscript -e "install.packages('githubinstall')"
 
 # Install Shiny server
-RUN export ADD=shiny && bash /etc/cont-init.d/add
+RUN /rocker_scripts/install_shiny_server.sh
 
 CMD ["/init"]
